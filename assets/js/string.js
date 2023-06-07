@@ -49,8 +49,13 @@ console.log(str[0].toUpperCase(),str[1].toLowerCase(),str[2].toLowerCase(),str[3
 
 let nombre = "Joan Sebastian Rubio Saavedra";
 // Indexof 
-alert(`La posicion de la primera letra \"E\" es la posicion ${nombre.indexOf("e")+1} del nombre ${nombre}`);
+//alert(`La posicion de la primera letra \"E\" es la posicion ${nombre.indexOf("e")+1} del nombre ${nombre}`);
 
 // 1. Funcion que devuelva un string con el primer caracter en mayuscula del string ingresado por parametro
+function primeraMayuscula(){
+    let firstMayusc = prompt("Ingrese la palabra")
+    return(firstMayusc[0].toUpperCase() + firstMayusc.substring(1));
+    }
+alert(primeraMayuscula());
 // 2. Escriba la funcion buscarSpam que devuelva verdadero si el string que se ingresa como parametro contiene la palabra viagara o xxx, en cualquier convinacion de minusculas o mayusculas
 // 3. funcion que convierta moneda a número entero
